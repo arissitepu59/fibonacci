@@ -28,12 +28,16 @@ public class Fibonacci {
            System.out.print("0 1 ");
            int a = 0;
            int b = 1;
+           int Jumlah=1;
            for (int i = 1; i < n; i++) {
                int nextAngka = a + b;
                System.out.print(nextAngka + " ");
+               Jumlah=Jumlah+nextAngka;
                a = b;
-               b = nextAngka;
+               b = nextAngka;                              
            }
-       }
+           System.out.println();
+           System.out.println("Jumlah :" +Jumlah);
+       }       
    }
 }
